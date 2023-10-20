@@ -4,10 +4,12 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/calc-ui/', // Set the base path
   server: {
-    host: "https://gomezjuanefe.github.io/calc-ui/"
+    host: '0.0.0.0', // Use 0.0.0.0 for universal access
   },
-  preview: {
-    host: true
-  }
+  build: {
+    outDir: 'dist',
+  },
+
 })
