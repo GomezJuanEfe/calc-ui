@@ -1,15 +1,20 @@
-import { useState } from 'react'
-import './App.css'
-import Calculator from './components/Calculator';
+import Calculator from './components/Calculator'
+import Title from './components/Title'
+import Toggle from './components/Toggle'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const theme = "dark";
 
   return (
-    <>
-     <h1>React Calculator</h1>
-     <Calculator />
-    </>
+    <html data-theme={theme} >
+      <main>
+
+        <Title />
+        <Calculator />
+        <Toggle />
+
+      </main>
+    </html>
   )
 }
 

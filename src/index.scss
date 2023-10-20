@@ -1,0 +1,74 @@
+html[data-theme='light'] {
+  --text-color-normal: #0a244d;
+}
+
+html[data-theme='dark'] {
+  --text-color-normal: #949ea8;
+}
+
+:root {
+  box-sizing: border-box;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: var(--text-color-normal);
+  background-color: var(--text-color-normal);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color .25s;
+  color: #1e1e1e;
+  background: linear-gradient(to bottom right,
+      rgb(63, 161, 251) 5%,
+      rgb(252, 70, 168) 25%,
+      rgb(48, 48, 48) 80% 90%,
+      rgb(28, 71, 110) 105%);
+  background-size: 300% 300%;
+  background-position: top left;
+  transition: background-position .5s;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body:has(#darkmode-toggle:checked) {
+  background-position: 100% 100%;
+  color: #dfdfdf;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--text-color-light);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}

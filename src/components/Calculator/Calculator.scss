@@ -1,0 +1,22 @@
+.calculator-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.calculator-wrapper {
+  max-width: 260px;
+
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 10px;
+
+  background-color: #00000060;
+}
+
+.container-buttons {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+
+  margin-top: 20px;
+}

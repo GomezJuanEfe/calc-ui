@@ -1,0 +1,66 @@
+.toggle {
+  width: 3.75em;
+  height: 2em;
+  position: relative;
+  display: block;
+
+  border: .125em solid currentColor;
+  border-radius: 2em;
+  margin: 0 auto;
+
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.toggle span {
+  width: 1.5em;
+  height: 1.5em;
+  display: block;
+  position: absolute;
+  left: .25em;
+  z-index: 2;
+  top: .25em;
+
+  border-radius: 2em;
+  background-color: currentColor;
+  text-indent: -9999px;
+  overflow: hidden;
+  transition: left .25s;
+}
+
+.toggle::before,
+.toggle::after {
+  content: '';
+  display: block;
+  border-radius: 1em;
+  position: absolute;
+  z-index: 1;
+}
+
+.toggle::after {
+  box-shadow: .25em .25em #1e1e1e;
+  height: 1.125em;
+  right: .9em;
+  top: .125em;
+  width: 1.125em;
+}
+
+.toggle::before {
+  background-color: #dfdfdf;
+  height: .625em;
+  outline: .25em dotted #dfdfdf;
+  outline-offset: .125em;
+  left: .7em;
+  top: .7em;
+  width: .625em;
+}
+
+input:checked~.toggle span {
+  left: 2em;
+}
+
+.sr-only {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}

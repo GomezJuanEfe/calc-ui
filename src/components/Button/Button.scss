@@ -1,0 +1,80 @@
+.button-30 {
+  height: 50px;
+  width: calc(25% - 10px);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  box-sizing: border-box;
+
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 4px;
+  border-width: 0;
+  margin: 5px;
+
+  appearance: none;
+  background-color: #FCFCFD;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  color: #36395A;
+  cursor: pointer;
+  list-style: none;
+  overflow: hidden;
+  
+  font-family: monospace;
+  font-size: 24px;
+  line-height: 1;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s, transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+}
+
+.button-30.w-50 {
+  width: calc(50% - 10px);
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  @media (hover: hover) {
+    transform: translateY(1px);
+  }
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.button-30.blue {
+  background-color: rgb(107, 181, 250);
+}
+
+.button-30.red {
+  background-color: rgb(251, 63, 63);
+}
+
+.button-30.orange {
+  background-color: rgb(251, 154, 63);
+}
+
+.button-30.pink {
+  background-color: rgb(255, 146, 204);
+}
+
+.button-30.gray {
+  background-color: rgb(182, 182, 182);
+}
+
+.button-30.green {
+  background-color: rgb(142, 255, 142);
+}
